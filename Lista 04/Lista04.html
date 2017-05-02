@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com exemplos em JavaScript</title>
+
+    <script type="text/javascript">
+        queimada = false;
+        ligado = false;
+        contador = 0;
+
+        function fStatusLampada(tipo){
+            if(!queimada){
+                document.getElementById("lampada").src="img/" + tipo + ".jpg";
+                if(tipo == "lampQueimada"){
+                    queimada = true;
+                }
+            }
+        }
+
+        function fStatusBotao(){
+            if(!ligado){
+                document.getElementById("botao").src="img/btnLigado.jpg";
+                ligado = true;
+                fStatusLampada('lampAcesa');
+            } else{
+                document.getElementById("botao").src="img/btnDesligado.jpg";
+                ligado = false;
+                fStatusLampada('lampApagada');
+                contador++;
+            }
+
+            if(contador >= 10){
+                fStatusLampada('lampQueimada');
+                queimada = true;
+            }
+        }
+
+        function fStatusCarro(cor){
+            document.getElementById("carro").src="img/" + cor + ".png"
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+<h2> :: Vamos acender a lâmpada? Passe ou clique com o mouse... (ou clique no botão) :: </h2>
+<img id="lampada" src="img/lampApagada.jpg" onMouseOver="fStatusLampada('lampAcesa')"
+     onMouseOut="fStatusLampada('lampApagada')" onClick="fStatusLampada('lampQueimada')"/>
+
+<img id="botao" src="img/btnDesligado.jpg" onClick="fStatusBotao('btnLigado')" />
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<img id="carro" src="img/carro_branco.png" />
+
+
+<br />
+
+
+<img id="botaoBranco" src="img/btnBranco.jpg" width="150px" height="150px" onclick="fStatusCarro('carro_branco')" />
+<img id="botaoAzul" src="img/btnAzul.jpg" width="150px" height="150px" onclick="fStatusCarro('carro_azul')" />
+<img id="botaoVerde" src="img/btnVerde.jpg" width="150px" height="150px" onclick="fStatusCarro('carro_verde')" />
+<img id="botaoVermelho" src="img/btnVermelho.jpg" width="150px" height="150px" onclick="fStatusCarro('carro_vermelho')" />
+
+
+
+</body>
+</html>

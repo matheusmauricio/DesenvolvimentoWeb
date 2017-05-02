@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Exercício 21-03 </title>
+
+    <style>
+        nav#menu{
+            font-size: 9pt;
+            font-family: Arial;
+            display: block;
+        }
+
+        nav#menu ul{
+            list-style: none;
+            border: 1px solid #c0c0c0;
+            float: left;
+        }
+
+        nav#menu li{
+            float: left;
+            background-color: #dddddd;
+            position: relative;
+            border-right: 1px solid #c0c0c0;
+        }
+
+        nav#menu li a{
+            color: #000000;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        nav#menu li a:hover{
+            background-color: #606060;
+            color: #ffffff;
+            text-shadow: 0 0 5px #ffffff;
+            text-decoration: underline;
+        }
+
+        nav#menu li ul{
+            position: absolute;
+            top: 25px;
+            left: 0px;
+            background-color: #ffffff;
+            display: none;
+        }
+
+        nav#menu li:hover ul, nav#menu li.over ul{
+            display: block;
+        }
+
+        nav#menu li ul li{
+            border: 1px solid #c0c0c0;
+            display: block;
+            width: 150px;
+        }
+
+        nav#menu h1{
+            display: none;
+        }
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            text-transform: uppercase;
+        }
+
+        nav#menu a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        nav#menu a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<nav id="menu">
+    <h1> Menu Principal </h1>
+    <ul>
+
+        <li><a href="http://ci.ifes.edu.br">Principal</a></li>
+        <li><a href="ftp://ftp.ci.ifes.edu.br/">Produtos</a>
+            <ul>
+                <li><a href="https://ead.ci.ifes.edu.br/">Memória</a></li>
+                <li><a href="http://moodle.ifes.edu.br/">Placa Mãe</a></li>
+                <li><a href="http://www.ci.ifes.edu.br/index.php/calendario/">Processador</a></li>
+            </ul>
+        </li>
+        <li><a href="https://academico3.cefetes.br/">Serviços</a>
+            <ul>
+                <li><a href="http://www.ci.ifes.edu.br/index.php/visitas/">Diagnóstico</a></li>
+                <li><a href="https://biblioteca2.ifes.edu.br/biblioteca/">Formatação</a></li>
+                <li><a href="http://www.ifes.edu.br/servidores">Limpeza Física</a></li>
+            </ul>
+        </li>
+        <li><a href="https://webmail.ifes.edu.br/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.ifes.edu.br%2fowa%2f">Fale Conosco</a></li>
+        <li><a href="http://www.ci.ifes.edu.br/index.php/estagio/">Sugestões</a></li>
+
+    </ul>
+</nav>
+
+</body>
+</html>
