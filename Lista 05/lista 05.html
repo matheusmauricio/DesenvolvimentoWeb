@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com exemplos em JavaScript</title>
+
+    <script type="text/javascript" src="fCalcular.js"> </script>
+
+    <script type="text/javascript" src="fIMC.js"> </script>
+
+</head>
+
+<body>
+
+<form name="FormCalcular" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return fCalcular()">
+  <label> Número 01: <input type="text" name="numero1" id="inum1" size="20" placeholder="Digite o primeiro número" maxlength="20" required/> </label>
+  <br />
+  <br />
+
+  <label> Número 02: <input type="text" name="numero2" id="inum2" size="20" placeholder="Digite o segundo número" maxlength="20" required/> </label>
+  <br />
+  <br />
+
+  <label> Resultado: <input type="text" name="resultado" id="iResultado" size="20" maxlength="20" readonly /> </label>
+  <br />
+  <br />
+
+  <label>  <br /> <input type="radio" name="tipoOperacao" id="adicao" /> Adição </label>
+
+  		<label> <input type="radio" name="tipoOperacao" id="subtracao" /> Subtração </label>
+
+      <label> <input type="radio" name="tipoOperacao" id="multiplicacao" /> Multiplicação </label>
+
+      <label> <input type="radio" name="tipoOperacao" id="divisao" /> Divisão </label>
+
+      <br />
+  		<label> <input type="submit" name="enviar" value="Enviar" /> </label>
+
+  		<label> <input type="reset" name="apagar" value="Apagar"/> </label>
+  		<br />
+  		<br />
+
+</form>
+
+<form name="FormIMC" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return fIMC()" >
+  <label> Peso: <input type="text" name="peso" id="iPeso" size="20" placeholder="Digite seu peso" maxlength="20" required/> </label>
+  <br />
+  <br />
+
+  <label> Altura: <input type="text" name="altura" id="iAltura" size="20" placeholder="Digite sua altura" maxlength="20" required/> </label>
+  <br />
+  <br />
+
+</form>
+
+</body>
+</html>
