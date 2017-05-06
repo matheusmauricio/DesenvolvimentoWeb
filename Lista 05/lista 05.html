@@ -42,7 +42,13 @@
 
 </form>
 
-<form name="FormIMC" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return fIMC()" >
+<br />
+<br />
+<br />
+<br />
+
+
+<form name="FormIMC" method="post" enctype="application/x-www-form-urlencoded" >
   <label> Peso: <input type="text" name="peso" id="iPeso" size="20" placeholder="Digite seu peso" maxlength="20" required/> </label>
   <br />
   <br />
@@ -50,6 +56,18 @@
   <label> Altura: <input type="text" name="altura" id="iAltura" size="20" placeholder="Digite sua altura" maxlength="20" required/> </label>
   <br />
   <br />
+
+  <label> IMC: <input type="text" name="imc" id="iIMC" size="20" maxlength="20" readonly/> </label>
+  <br />
+  <br />
+
+  <label>  <input type="text" name="tipoIMC" id="iTipoIMC" size="40" maxlength="40" readonly/> </label>
+  <br />
+  <br />
+
+  <label> <input type="button" name="enviarIMC" value="Enviar" onclick="return fIMC()"/> </label>
+
+  <label> <input type="reset" name="limparIMC" value="Limpar" /> </label>
 
 </form>
 
