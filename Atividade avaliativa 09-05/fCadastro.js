@@ -27,9 +27,5 @@ function fCadastro(){
       );
     }
 
-
-    //document.getElementById("iConceito").value = resultado;
-
-
     return false;
 }
