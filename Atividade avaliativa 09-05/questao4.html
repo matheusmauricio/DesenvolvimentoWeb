@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 4 - Cadastro</title>
+
+    <script type="text/javascript" src="fCadastro.js"> </script>
+
+</head>
+
+<body>
+
+<form name="FormCadastro" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return fCadastro()">
+
+  <table id="tableCadastro" width="400" border="2" cellpadding="5" cellspacing="0" >
+    <tr>
+      <td> <label> Nome: </td>
+      <td> <input type="text" name="nome" id="iNome" size="45" placeholder="Digite seu nome" maxlength="45" required/> </label> </td>
+    </tr>
+
+    <tr>
+      <td> <label> Telefone: </td>
+      <td> <input type="text" name="telefone" id="iTelefone" size="20" placeholder="Digite seu telefone" maxlength="20" required/> </label> </td>
+    </tr>
+
+    <tr>
+      <td> <label> Estado: </td>
+      <td> <input list="uf" id="iUf" placeholder="Selecione o estado" required /> <datalist id="uf">
+  			<option value="Espírito Santo">
+  			<option value="Rio de Janeiro">
+  			<option value="São Paulo">
+        <option value="Minas Gerais">
+  		  </datalist>
+        </label> </td>
+    </tr>
+
+    <tr>
+      <td> <label> Sexo: </label> </td>
+      <td> <input type="radio" name="sexo" id="masculino" checked /> Masculino <br /> <label> <input type="radio" name="sexo" id="feminino" /> Feminino </label> </td>
+    </tr>
+
+    <tr>
+      <td> <label> Senha: </td>
+      <td> <input type="password" name="senha" id="iSenha" size="20" placeholder="Digite sua senha" maxlength="20" required /> </label> </td>
+    </tr>
+
+    <tr>
+      <td> <label> Confirmação de Senha: </td>
+      <td> <input type="password" name="confirmaSenha" id="iConfirmaSenha" size="20" placeholder="Confirme sua senha" maxlength="20" required /> </label> </td>
+    </tr>
+
+    <tr>
+      <td>
+        <label> <input type="submit" name="cadastrar" value="Cadastrar" /> </label>
+
+      	<label> <input type="reset" name="apagar" value="Apagar"/> </label>
+      </td>
+    </tr>
+
+  </table>
+
+</form>
+
+</body>
+</html>

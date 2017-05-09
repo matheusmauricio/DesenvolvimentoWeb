@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 1 - Conceitos</title>
+
+    <script type="text/javascript" src="fConceito.js"> </script>
+
+</head>
+
+<body>
+
+<form name="FormConceito" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return fConceito()">
+  <label> Nota: <input type="text" name="notaAluno" id="iNotaAluno" size="20" placeholder="Digite sua nota" maxlength="20" required/> </label>
+  <br />
+  <br />
+
+  <label> Conceito: <input type="text" name="conceito" id="iConceito" size="25" maxlength="25" readonly /> </label>
+  <br />
+  <br />
+  <br />
+	<label> <input type="submit" name="enviar" value="Enviar" /> </label>
+
+	<label> <input type="reset" name="apagar" value="Apagar"/> </label>
+	<br />
+	<br />
+
+</form>
+
+</body>
+</html>

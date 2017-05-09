@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 2 - Aumento Salarial</title>
+
+    <script type="text/javascript" src="fAumentarSalario.js"> </script>
+
+</head>
+
+<body>
+
+<form name="FormSalario" method="post" enctype="application/x-www-form-urlencoded" onsubmit="return fAumentarSalario()">
+  <label> Nome: <input type="text" name="nomeFuncionario" id="iNomeFuncionario" size="45" placeholder="Digite seu nome" maxlength="45" required/> </label>
+  <br />
+  <br />
+
+  <label> Salário: <input type="text" name="salarioFuncionario" id="iSalarioFuncionario" size="20" placeholder="Digite seu salário" maxlength="20" required/> </label>
+  <br />
+  <br />
+
+  <label>  <input type="text" name="resultado" id="iResultado" size="60" maxlength="60" readonly /> </label>
+  <br />
+  <br />
+  <br />
+	<label> <input type="submit" name="enviar" value="Enviar" /> </label>
+
+	<label> <input type="reset" name="apagar" value="Apagar"/> </label>
+	<br />
+	<br />
+
+</form>
+
+</body>
+</html>
