@@ -43,7 +43,7 @@ class Usuario{
         $create->ExeCreate(self::entity, $this->dados);
         if ($create->getResultado()){
             $this->resultado = $create->getResultado();
-
+            $this->msg = "<p style='color:green'>Sucesso ao cadastrar {$this->dados['nome']}</p>";
         }
     }
 
