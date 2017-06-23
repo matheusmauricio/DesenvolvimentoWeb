@@ -1,0 +1,11 @@
+RewriteEngine On
+# informando a pasta padrao
+RewriteBase /backup/DesenvolvimentoWeb/CRUD/login-paginacao/adm/
+
+# informando que a regra vale para diretorios, arquivos e links
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# expressao regular para pegar tudo após o index.php
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
